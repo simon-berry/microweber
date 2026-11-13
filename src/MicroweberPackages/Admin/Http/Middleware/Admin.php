@@ -11,6 +11,7 @@ use MicroweberPackages\Admin\Events\ServingAdmin;
 class Admin
 {
     protected $except = [
+        'admin.login',
         'admin.login.*',
         'admin.reset.*',
     ];

@@ -19,11 +19,13 @@ class AdminRouteExceptionsTest extends TestCase
         };
 
         $cases = [
+            'admin.login' => true,
             'admin.login.index' => true,
             'admin.login.submit' => true,
             'admin.reset.password' => true,
             'admin.dashboard' => false,
-            'admin.login' => false,
+            'admin.loginfoo' => false,
+            'prefix.admin.login' => false,
             'prefix.admin.login.index' => false,
             'adminXloginYindex' => false,
             'admin.resetter.index' => false,
